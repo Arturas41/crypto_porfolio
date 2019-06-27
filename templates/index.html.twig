@@ -1,0 +1,6 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    Total assets value: {{ totalAssetsValue|round(2, 'ceil') }} {{ currencyCodeTo }}
+    <a href="{{ path('asset_index') }}">Show assets</a>
+{% endblock %}
